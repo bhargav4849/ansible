@@ -1,0 +1,12 @@
+---
+ - hosts : all
+   tasks :
+   - name: updating yum
+     yum:
+       name: yum
+       state: latest
+
+   - name: docker
+     yum:
+       name: "docker"
+       state: present
