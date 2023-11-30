@@ -1,0 +1,7 @@
+---
+ - hosts : all
+   tasks :
+   - name : tomcat
+     yum :
+       name: httpd
+       state: present
